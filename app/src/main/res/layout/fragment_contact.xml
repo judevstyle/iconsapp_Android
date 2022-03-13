@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/img_contact"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CONTACT US"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:font_name="kanitBold" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_contact_tel" />
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/telAction"
+                android:text="Tel. 02 810 8892-6"
+                android:textSize="25sp" />
+
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:id="@+id/timeService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="@string/service_time"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="24dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/lineAction"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_line" />
+
+                <ImageButton
+                    android:id="@+id/facebookAction"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/btn_facebook" />
+
+
+            </LinearLayout>
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="WWW.ICONS.CO.TH"
+                android:id="@+id/webAction"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:font_name="kanitBold" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

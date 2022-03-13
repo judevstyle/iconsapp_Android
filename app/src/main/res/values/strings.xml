@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">iCONS App</string>
+    <string name="preference_file_key">com.ssoft.iconsapp.PREFERENCE_FILE_KEY</string>
+
+
+    <!--    main tab-->
+    <string name="Main_Home">Home</string>
+    <string name="Main_Register">Member</string>
+    <string name="Main_Contact">Contact</string>
+
+
+    <!--    Home tab-->
+    <string name="main_info_project">PROJECTS</string>
+    <string name="main_info_value">PROJECTS VALUE</string>
+    <string name="main_info_member">MEMBER</string>
+    <string name="main_info_contract">CONTRACTS</string>
+    <string name="main_info_daily">DAILY PROJECTS</string>
+    <string name="main_info_weekly">WEEKLY PROJECTS</string>
+
+    <string name="main_info_all_filter">All</string>
+    <string name="main_info_asset_filter">Materal &amp; Required</string>
+    <string name="main_info_infromation_filter">Puublic Relations"</string>
+
+
+    <!--    Register tab-->
+    <string name="register_successfuly">Registration is successfuly.</string>
+
+    <string name="changepasscode_successfuly">Change passcode is successfuly.</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+
+
+    <string name="main_register_mobile_phone"></string>
+    <string name="main_register_email"></string>
+    <string name="main_register_passcode"></string>
+
+    <string name="register_edit">Edit</string>
+    <string name="register">Register</string>
+    <string name="request_tel">Plases enter your phone number</string>
+    <string name="request_email">Plases enter your Email</string>
+    <string name="request_code">Plases enter your passcode</string>
+    <string name="request_accept">Accept Terms of Service</string>
+
+
+    <string name="main_button_member_register">Register</string>
+    <string name="main_button_member_signout">Logout</string>
+    <string name="main_button_member_term">Accept Terms of Service</string>
+
+    <string name="main_menu_contact">Contact</string>
+    <string name="main_menu_home">Home</string>
+    <string name="main_menu_language">TH</string>
+    <string name="main_menu_member">Member</string>
+    <string name="main_text_member_email">E-mail</string>
+    <string name="main_text_member_passcode">Passcode</string>
+    <string name="main_text_member_phone">Mobile Phone</string>
+    <string name="hit_tel">Mobile Phone</string>
+    <string name="hit_email">E-mail</string>
+    <string name="hit_passcode">Passcode</string>
+    <string name="text_accept_condition">Accept Terms of Service</string>
+
+    <string name="register_error_already">Registry is not success because the input mobile phone number is already registered.
+Please contact iCONS to get access of registration in office hours; Mon - Fri, 8:30 - 17:30 hr.</string>
+    <!--    <string name="register_error_already">This telephone number is already registered.\n - If you insist to register same number to new device, the system needs acceptance from the old device.\n - For uninstallation and reinstallation to the same device, please contact iCONS for assistance.</string>-->
+    <string name="register_error_email">Email address format is incorrect. Please check.</string>
+    <string name="register_error_location">Location not found. Please check.</string>
+    <string name="register_error_notregister">Your telephone number is not registered yet. Member only. Please contact iCONS for registration.</string>
+    <string name="register_error_passcode">Registry is not success because of wrong mobile phone number or password. Please recheck.</string>
+    <string name="register_error_phone">Telephone number is wrong. Please check.</string>
+
+    <string name="register_ok">OK</string>
+    <string name="register_over_limit">Device changing exceeds limitation.</string>
+    <string name="register_title">Register</string>
+
+
+    <string name="default_notification_channel_id">noti1</string>
+
+
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="success_register">Register Success</string>
+    <string name="edit">Edit</string>
+    <string name="allFilter">All</string>
+    <string name="infomationFilter">Puublic Relations</string>
+    <string name="assetFilter"><![CDATA[Materal & Required]]></string>
+
+
+    <string name="register_cancel">Cancel</string>
+    <string name="register_save">Save</string>
+    <string name="register_hit_passcode">Input new passcode.</string>
+
+    <!--    profile-->
+    <string name="changed_passcode">Passcode is changed.</string>
+    <string name="changed_passcode_title">Change Passcode</string>
+    <string name="please_register">Please register</string>
+    <string name="change_passcode_error">Change Passcode Error:
+Password is incorrect. Please go to www.icons.co.th to get new password.</string>
+
+
+    <!--    contact-->
+    <string name="Contact_us">C O N T A C T  U S</string>
+    <string name="tel">Tel.</string>
+    <string name="Opentime">Monday - Friday, 8:30 a.m. - 5.30 p.m. (GMT+7)</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_member">Register</string>
+    <string name="menu_contact">Contact</string>
+    <string name="service_time">Monday - Friday, 8.30 a.m. - 5.30 p.m. (GMT+7)</string>
+    <string name="input_new_passcode">input new passcode</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="passcode_limit_5_digit">passcode limit 5 digit</string>
+
+</resources>

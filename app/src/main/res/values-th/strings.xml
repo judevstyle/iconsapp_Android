@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">iCONS App</string>
+    <string name="preference_file_key">com.ssoft.iconsapp.PREFERENCE_FILE_KEY</string>
+
+
+    <!--    main tab-->
+    <string name="Main_Home">Home</string>
+    <string name="Main_Register">Member</string>
+    <string name="Main_Contact">Contact</string>
+
+    <string name="changepasscode_successfuly">Change passcode is successfuly.</string>
+
+    <!--    Home tab-->
+    <string name="main_info_project">โครงการ</string>
+    <string name="main_info_value">มูลค่าโครงการ(ล้านบาท)</string>
+    <string name="main_info_member">สมาชิก</string>
+    <string name="main_info_contract">จำนวนโครงการที่ต้องการผู้รับเหมา</string>
+    <string name="main_info_daily">จำนวนโครงการเฉลี่ยนต่อวัน</string>
+    <string name="main_info_weekly">จำนวนโครงการเฉลี่ยนต่อสัปดาห์</string>
+
+    <string name="main_info_all_filter">ทั้งหมด</string>
+    <string name="main_info_asset_filter">Materal &amp; Required</string>
+    <string name="main_info_infromation_filter">Puublic Relations"</string>
+
+
+    <!--    Register tab-->
+<!--    <string name="register_successfuly">Registration is successfuly.</string>-->
+
+    <string name="main_register_mobile_phone"></string>
+    <string name="main_register_email"></string>
+    <string name="main_register_passcode"></string>
+
+    <string name="register_edit">Edit</string>
+    <string name="register">ลงทะเบียน</string>
+    <string name="request_tel">ระบุเบอร์โทร</string>
+    <string name="request_email">ระบุอีเมล</string>
+    <string name="request_code">ระบุ Passcode</string>
+    <string name="request_accept">กดยอมรับเงื่อนไข</string>
+
+
+    <string name="main_button_member_register">Register</string>
+    <string name="main_button_member_signout">Logout</string>
+    <string name="main_button_member_term">Accept Terms of Service</string>
+
+    <string name="main_menu_contact">Contact</string>
+    <string name="main_menu_home">Home</string>
+    <string name="main_menu_language">TH</string>
+    <string name="main_menu_member">Member</string>
+    <string name="main_text_member_email">E-mail</string>
+    <string name="main_text_member_passcode">Passcode</string>
+    <string name="main_text_member_phone">Mobile Phone</string>
+
+
+    <string name="hit_tel">เบอร์โทรศัพท์</string>
+    <string name="hit_email">อีเมล</string>
+    <string name="hit_passcode">รหัสลงทะเบียน</string>
+    <string name="text_accept_condition">ยอมรับเงื่อนไขการใช้บริการ</string>
+<string name="register_error_already">ไม่สามารถลงทะเบียนได้ เนื่องจาก หมายเลขโทรศัพท์มีการลงทะเบียนแล้ว
+กรุณาติดต่อ iCONS  เพื่อขอสิทธิ์การลงทะเบียนใหม่ ในวันและเวลาทำการ จันทร์ - ศุกร์ เวลา 08.30 - 17.30 น.</string>
+<!--    <string name="register_error_already">หมายเลขโทรศัพท์นี้ลงทะเบียนที่แล้ว\n - หากลงทะเบียนซ้ำซ้อน เครื่องที่ลงทะเบียนล่าสุดต้องได้รับการยินยอมจากเครื่องเดิม\n - หากถอนและติดตั้ง App ใหม่ที่เครื่องเดิม กรุณาติดต่อ iCONS เพื่อช่วยเหลือ</string>-->
+    <string name="register_error_email">รูปแบบ Email ไม่ถูกต้อง กรุณาตรวจสอบ</string>
+    <string name="register_error_location">กรุณาเปิดการใช้งานตำแหน่งที่ตั้ง</string>
+    <string name="register_error_notregister">หมายเลขโทรศัพท์ของท่านยังไม่ได้ลงทะเบียน (เฉพาะสมาชิกเท่านั้น) กรุณาติดต่อ iCONS เพื่อลงทะเบียน</string>
+    <string name="register_error_passcode">ไม่สามารถลงทะเบียนได้ เนื่องจาก หมายเลขโทรศัพท์ หรือ รหัส Passcode ไม่ถูกต้อง กรุณาตรวจสอบ</string>
+    <string name="register_error_phone">หมายเลขโทรศัทพ์ไม่ถูกต้อง กรุณาตรวจสอบ</string>
+
+    <string name="register_ok">ตกลง</string>
+    <string name="register_cancel">ยกเลิก</string>
+    <string name="register_save">บันทึก</string>
+    <string name="register_successfuly">ลงทะเบียนใช้งานสำเร็จ</string>
+    <string name="register_hit_passcode">กรอก passcode ใหม่</string>
+
+
+    <string name="register_over_limit">Device changing exceeds limitation.</string>
+    <string name="register_title">Register</string>
+
+<!--    profile-->
+    <string name="changed_passcode">เปลี่ยน Passcode เรียบนร้อย</string>
+    <string name="changed_passcode_title">เปลี่ยน Passcode</string>
+    <string name="please_register">ลงทะเบียนก่อนใช้งาน</string>
+    <string name="change_passcode_error">รหัส Passcode ใหม่ไม่ถูกต้อง
+        กรุณากลับไป Log in ที่ www.icons.co.th เพื่อรับรหัส Passcode ใหม่</string>
+
+<!--    contact-->
+    <string name="Contact_us">C O N T A C T  U S</string>
+    <string name="tel">Tel.</string>
+    <string name="Opentime">เวลาทำการ: วันจันทร์ - ศุกร์ เวลา 8:30 - 5.30 น.</string>
+
+
+    <string name="accept">ยอมรับ</string>
+    <string name="reject">ปฏิเสธ</string>
+
+
+    <string name="default_notification_channel_id">noti1</string>
+
+
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="success_register">ท่านได้ลงทะเบียนสำเร็จแล้ว</string>
+    <string name="edit">แก้ไข</string>
+    <string name="allFilter">ทั้งหมด</string>
+    <string name="infomationFilter">ประชาสัมพันธ์</string>
+    <string name="assetFilter"><![CDATA[ต้องการวัสดุ & ต้องการผู้รับเหมา]]></string>
+    <string name="menu_home">หน้าหลัก</string>
+    <string name="menu_member">สมาชิก</string>
+    <string name="menu_contact">ติดต่อ</string>
+    <string name="service_time">เวลาทำการ: วันจันทร์ - ศุกร์ เวลา 08:00 - 17:00 น.</string>
+    <string name="input_new_passcode">กรอก Passcode ใหม่</string>
+    <string name="save">บันทึก</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="passcode_limit_5_digit">passcode limit 5 digit</string>
+
+</resources>

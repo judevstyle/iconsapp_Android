@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.ssoft.iconsapp.model.response.News" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:orientation="vertical">
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/textDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@{data.nw_update}"
+                    android:textColor="@color/purple_700" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@color/gray"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside" />
+            </FrameLayout>
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:id="@+id/detailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@{data.nw_detail}"
+                android:textColor="#333" />
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webAction"
+                android:src="@drawable/website"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,113 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id "androidx.navigation.safeargs"
+    id 'com.google.gms.google-services'  // Google Services plugin
+
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.ssoft.iconsapp"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+//    buildFeatures  {
+//        dataBinding true
+//        viewBinding true
+//    }
+
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    // Koin for Android DI
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
+    implementation "org.koin:koin-androidx-ext:$koin_version"
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    //rooms
+//    implementation "androidx.room:room-runtime:$room_version"
+//    kapt "androidx.room:room-compiler:$room_version"
+//    implementation "androidx.room:room-ktx:$room_version"
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+
+    //permission
+    implementation "com.github.permissions-dispatcher:permissionsdispatcher:4.9.1"
+    kapt "com.github.permissions-dispatcher:permissionsdispatcher-processor:4.9.1"
+
+    //network
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:29.1.0')
+//    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.google.firebase:firebase-messaging-directboot:20.2.0'
+
+
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+}
+

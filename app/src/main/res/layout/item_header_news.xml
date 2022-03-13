@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.ssoft.iconsapp.model.response.HeaderNews" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/layoutInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ss.com.bannerslider.Slider
+                    android:id="@+id/banner_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bgwhite"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_info_project"
+                            android:textColor="#333"
+                            android:textSize="8sp" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textNumberProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:gravity="center"
+                            android:text="@{data.allqty}"
+                            android:textColor="@color/purple_700"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bgwhite"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_info_value"
+                            android:textColor="#333"
+                            android:textSize="8sp" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textValueProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:gravity="center"
+                            android:text="@{data.allvalue}"
+                            android:textColor="@color/purple_700"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bgwhite"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/main_info_member"
+                            android:textColor="#333"
+                            android:textSize="8sp" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textTotalMembers"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:gravity="center"
+                            android:text="@{data.allmember}"
+                            android:textColor="@color/purple_700"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bggreen"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_men" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textContractProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="@{data.findcontractor}"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_info_contract"
+                            android:textColor="#fff"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bggreen"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_bar" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textDayProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="@{data.perday}"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_info_daily"
+                            android:textColor="#fff"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/brgreen_bggreen"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_gauge" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:id="@+id/textWeekProjects"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:gravity="center"
+                            android:text="@{data.perweek}"
+                            android:textColor="#fff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.ssoft.iconsapp.share.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/main_info_weekly"
+                            android:textColor="#fff"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/typeFilter"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="12dp"
+                        app:selectionRequired="true"
+
+                        android:paddingRight="12dp"
+                        app:singleSelection="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.chip.Chip
+                            android:checked="true"
+                            android:textAppearance="@style/chipText"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            app:chipBackgroundColor="@color/select_chip"
+                            android:textColor="@color/select_chip_text"
+                            android:id="@+id/allFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/allFilter" />
+
+                        <com.google.android.material.chip.Chip
+                            android:textAppearance="@style/chipText"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            app:chipBackgroundColor="@color/select_chip"
+                            android:textColor="@color/select_chip_text"
+                            android:id="@+id/assetFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:text="@string/assetFilter" />
+
+                        <com.google.android.material.chip.Chip
+                            android:textAppearance="@style/chipText"
+                            style="@style/Widget.MaterialComponents.Chip.Choice"
+                            app:chipBackgroundColor="@color/select_chip"
+                            android:textColor="@color/select_chip_text"
+                            android:id="@+id/infomationFilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="24dp"
+                            android:text="@string/infomationFilter" />
+
+                    </com.google.android.material.chip.ChipGroup>
+
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

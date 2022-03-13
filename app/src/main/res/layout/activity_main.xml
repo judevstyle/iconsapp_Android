@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.main.MainActivity">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="46dp"
+       android:background="@color/colorPrimary"
+       android:minHeight="?attr/actionBarSize"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginTop="4dp"
+          android:layout_marginBottom="4dp"
+          android:scaleType="fitStart"
+          android:src="@drawable/logo_icons" />
+
+
+   </androidx.appcompat.widget.Toolbar>
+
+   <FrameLayout
+       android:id="@+id/frameLayout"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:layout_constraintBottom_toTopOf="@+id/menuView"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+   <com.ssoft.iconsapp.share.widget.MenuViewItem
+       android:id="@+id/menuView"
+       android:layout_width="match_parent"
+       android:layout_height="66dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

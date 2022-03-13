@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.notification.NotificationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/logo_icons" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.ssoft.iconsapp.share.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="รหัส OTP นี้ใช้สำหรับ Login\nเข้าใช้งาน www.icons.co.th เท่านั้น" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="42dp"
+            android:background="@color/colorPrimaryTrans"
+            android:orientation="vertical">
+
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:text="รหัสคือ" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text='-'
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <com.ssoft.iconsapp.share.widget.CustomTextView
+                    android:id="@+id/code6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <com.ssoft.iconsapp.share.widget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="(Ref. username)" />
+
+
+        </LinearLayout>
+
+        <com.ssoft.iconsapp.share.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="ท่านต้้อง Login ภายใน 5 นาที"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

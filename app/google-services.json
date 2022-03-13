@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "369904049520",
+    "project_id": "iconsapp-a86d7",
+    "storage_bucket": "iconsapp-a86d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369904049520:android:095694e69639b75fd3c3b5",
+        "android_client_info": {
+          "package_name": "com.ssoft.iconsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369904049520-rmhftbbh8rpspft4bjgp1ilcbj5beb37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Pco9TOu78ykuwlaz2Aur1l3C2PUZiKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369904049520-rmhftbbh8rpspft4bjgp1ilcbj5beb37.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369904049520-57ecl2el62imhp21dkptj8mh5lb8q32j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ssoft.iconsapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
